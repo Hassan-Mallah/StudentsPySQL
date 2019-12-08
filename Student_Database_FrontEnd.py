@@ -49,10 +49,8 @@ class Student:
 
         def DisplayData():
             studentlist.delete(0, END)
-            print(studentlist.size())
             for row in stdDatabase_BackEnd.viewData():
                 studentlist.insert(END, row)
-            print(studentlist.size())
 
         def StudentRec(event):
             global sd
